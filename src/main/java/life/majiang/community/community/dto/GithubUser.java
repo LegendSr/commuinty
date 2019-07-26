@@ -6,6 +6,16 @@ public class GithubUser {
     private String bio;
     private String avatar_url;
 
+    @Override
+    public String toString() {
+        return "GithubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", bio='" + bio + '\'' +
+                ", avatar_url='" + avatar_url + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
